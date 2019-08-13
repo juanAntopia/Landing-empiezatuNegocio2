@@ -7,18 +7,16 @@ if(isset($_POST)){
 		$phone = htmlspecialchars($_POST['c_phone']);
 		$state = htmlspecialchars($_POST['c_state']);
 		$city = htmlspecialchars($_POST['c_city']);
-		$budget = htmlspecialchars($_POST['c_budget']);
+		$team = htmlspecialchars($_POST['c_team']);
 		$radioValue = htmlspecialchars($_POST['radioValue']);
-		$camp1 = htmlspecialchars($_POST['c_camp1']);
-		$camp2 = htmlspecialchars($_POST['c_camp2']);
-		$camp3 = htmlspecialchars($_POST['c_camp3']);
 		$radioValue2 = htmlspecialchars($_POST['radioValue2']);
 		$message = htmlspecialchars($_POST['c_message']);
+		$terms = htmlspecialchars($_POST['c_terms']);
 
 	$error = "faltan_valores";
 
-	if ($name && $email && $phone && $state && $city && $budget
-		&& $radioValue && $radioValue2 && $message) {
+	if ($name && $email && $phone && $state && $city && $team
+		&& $radioValue && $radioValue2 && $message && $terms) {
 		$error = "ok";
 		if (!is_int($name) || !is_numeric($name) && !empty($name) && strlen($name) > 2 && strlen($name) < 100) {
 			$validate_name = true;
@@ -55,53 +53,25 @@ if(isset($_POST)){
 			$error = "ciudad";
 		}
 
-		if (!is_int($calle) || !is_numeric($calle) && !empty($calle) && strlen($calle) > 2 && strlen($calle) < 100) {
-			$validate_calle = true;
+		if ($team != "") {
+			$validate_team = true;
 		} else {
-			$validate_calle = false;
-			$error = "calle";
-		}
-
-		if($budget != "" && preg_match("/^[0-9]+$/", $budget)){
-			$validate_budget = true;
-		}else{
-			$validate_budget = false;
-			$error = "presupuesto";
+			$validate_team = false;
+			$error = "Tipo de Equipo";
 		}
 
 		if (isset($radioValue)) {
 			$validate_radioValue = true;
 		} else {
 			$validate_radioValue = false;
-			$error = "RadioValue1";
+			$error = "¿Para qué necesitas el equipo?";
 		}
-
-		/*if($camp1 != "" && preg_match("/^[0-9]+$/", $camp1)){
-			$validate_camp1 = true;
-		}else{
-			$validate_camp1 = false;
-			$error = "m2";
-		}
-
-		if($camp2 != "" && preg_match("/^[0-9]+$/", $camp2)){
-			$validate_camp2 = true;
-		}else{
-			$validate_camp2 = false;
-			$error = "ancho";
-		}
-
-		if($camp3 != "" && preg_match("/^[0-9]+$/", $camp3)){
-			$validate_camp3 = true;
-		}else{
-			$validate_camp3 = false;
-			$error = "largo";
-		}*/
 
 		if (isset($radioValue2)) {
 			$validate_radioValue2 = true;
 		} else {
 			$validate_radioValue2 = false;
-			$error = "RadioValue2";
+			$error = "¿Estas interesado en un proyecto Llave en mano?";
 		}
 
 		if (strlen($message) > 2 && strlen($message) < 500 && !empty($message)) {
@@ -109,6 +79,13 @@ if(isset($_POST)){
 		} else {
 			$validate_message = false;
 			$error = "mensaje";
+		}
+
+		if(isset($terms) && $terms == "on"){
+			$validate_terms = true;
+		}else{
+			$validate_terms = false;
+			$error = "terminos y condiciones";
 		}
 	}else {
 		$error = "faltan_valores";
@@ -119,8 +96,6 @@ if(isset($_POST)){
 		header("Location:../index.php?error=" . $error);
 	}elseif($error == "ok"){
 		
-		
-
 		//asunto
 		$asunto="Mensaje enviado desde la página web";
 
@@ -149,17 +124,14 @@ if(isset($_POST)){
 			<ul>
 				<li>Estado: '.$state.'</li>
 				<li>Ciudad: '.$city.'</li>
-				<li>Presupuesto aproximado: '.$budget.'</li>
-				<li>¿Cuentas con terreno?: '.$radioValue.'</li>
-				<li>m2: '.$camp1.'</li>
-				<li>Ancho: '.$camp2.'</li>
-				<li>Largo: '.$camp3.'</li>
+				<li>Tipo de equipo: '.$team.'</li>
+				<li>¿Para qué necesitas el equipo?: '.$radioValue.'</li>
 				<li>¿Estas interesado en un proyecto Llave en mano?: '.$radioValue2.'</li>
 			</ul>
 
 			<p>Contacta a  <strong>' . $name . '</strong> al correo:  <span style="color:blue;"> ' . $email . '</span> o al teléfono '. $phone .' </p>
 			
-			<p>Ir a mi sitio web <span style="color:blue">http://www.</span></p>
+			<p>Ir a mi sitio web <span style="color:blue">http://greenmatik.mx</span></p>
 		</body>
 		</html>
 		';

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content=" ¡No Contrates Plomeros, Contrata Especialistas! ">
 	<meta name="author" content="Perla Holguín">
-    <title> Drenajes y fugas | Solución para drenajes |¡No Contrates Plomeros, Contrata Especialistas!	</title>
+    <title> GreenMatik</title>
 <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700,900" rel="stylesheet">
@@ -35,7 +35,7 @@
         <div class="container">
             <div class="row justify-content-center"> 
                 <div class="col-xs-12 col-md-12 text-center">
-                    <img src="images/logo2.png" alt="tecno & fum" width="150"><br><br>
+                    <img src="images/icons/logo.png" alt="GreenMatik Logo" width="150"><br><br>
                 </div> <br>
                <div class="row">
                    <div class="col-3"></div>
@@ -43,7 +43,7 @@
 
                         <!-- Card image -->
                         <div class="view overlay">
-                          <img class="card-img-top" src="images/gracias3.png" alt="Card image cap" >
+                          <img class="card-img-top" src="images/icons/gracias2.png" alt="Card image cap" >
                           <a href="#!">
                             <div class="mask rgba-white-slight"></div>
                           </a>
@@ -51,7 +51,7 @@
                       
                         <!-- Card content -->
                         <div class="card-body text-center">
-                            <img src="images/favorito.png" alt="">
+                            <img src="images/icons/gracias3.png" alt="">
                           <!-- Title -->
                           <h2 class="card-title text-center">Gracias !</h2>
                           <!-- Text -->

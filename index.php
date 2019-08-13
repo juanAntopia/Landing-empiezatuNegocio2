@@ -8,7 +8,7 @@
     Ofrecemos los contactos globales y la experiencia para administrar todos los aspectos de sus procesos de envíos internacionales de exportación e importación.
     ">
     <meta name="author" content="Perla Holguín">
-    <title>Landing negocios </title>
+    <title>Landing equipos </title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800" rel="stylesheet">
@@ -33,14 +33,14 @@
 
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <div class="logo-espacio">
-                            <img src="images/icons/Logo.png" alt="logo" class="logo">
+                            <img src="images/icons/logo.png" alt="logo" class="logo">
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 padding-columna-header">
                         <h5 class="header-subtitulo">
                             Atendemos en todo México y Latinoamérica
                         </h5>
-                        <img src="images/icons/Logo.png" alt="Logo" class="imagen-logo">
+                        <img src="images/icons/logo.png" alt="Logo" class="imagen-logo">
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 padding-columna-header" style="padding-left: 0px; padding-right: 0px;">
 
@@ -109,9 +109,9 @@
             </div>
             <div class="row centrar">
                 <div class="col-xs-12 col-sm-12 col-md-7">
-                    <a href="#">
+                    <a href="#Contacto">
                         <button class="btn-1" data-aos="fade-left" data-aos-duration="1800">
-                            Conocer más
+                            Contáctanos
                         </button>
                     </a>
                 </div>
@@ -144,58 +144,76 @@
 
         <div class="container">
 
-            <div class="row justify-content-xs-center">
-                <div class="col-xs-12 col-md-3  services-padding ">
-                    <img src="images/icons/01.png" alt="Excelente rentabilidad
-                    operativa" width="45" class="oculto imagen-servicios">
-                    <h6 class="transporte-service">Excelente rentabilidad
-                        operativa</h5>
-                        <p class="transportacion">Óptimo Coste de inversión
-                            +
-                            Alta productividad
-                            +
-                            Bajo coste de mantenimiento
-                            =
-                            NEGOCIO RENTABLE<br><br>
-                        </p>
+            <div class="row mt-50">
+                <div class="col-xs-6 col-sm-6 col-md-4 mb-50">
+                    <div class="media">
+                        <img class="mt-10 mr-2" src="images/icons/catalogo-01.png" width="40" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h6 class="mt-0 mont"><strong>CALIDAD DE LAVADO</strong></h6>
+                            <h6 class="">CEPILLOS DE FOAMI <br> DE ÚLTIMA GENERACIÓN</h6>
+                        </div>
+                    </div>
+                    <!--wnd media -->
+                </div>
+                <!--end col -->
+                <div class="col-xs-6 col-sm-6 col-md-4 mb-50">
+                    <div class="media">
+                        <img class=" mt-10 mr-2" src="images/icons/catalogo-02.png" width="40" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h6 class="mt-0 mont"><strong>BRILLO DESLUMBRANTE</strong></h6>
+                            <h6 class="">EXCLUSIVO MÓDULO <br> AUTO POLISH SYSTEM(APS)</h6>
+                        </div>
+                    </div>
+                    <!--wnd media -->
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-4 mb-50">
+                    <div class="media">
+                        <img class=" mt-10 mr-2" src="images/icons/catalogo-04.png" width="40" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h6 class="mt-0 mont"><strong>PERSONALIZA TU EQUIPO</strong></h6>
+                            <h6 class="">TU DECIDES CÓMO QUIERES <br> QUE SEA TU EQUIPO</h6>
+                        </div>
+                    </div>
+                    <!--wnd media -->
                 </div>
 
-                <div class="col-xs-12 col-md-3 services-padding " data-aos="fade-up" data-aos-duration="1300">
-                    <img src="images/icons/02.png" alt="TDemanda 
-                    creciente" width="45" class="oculto imagen-servicios">
-                    <h6 class="transporte-service">Demanda
-                        creciente </h5>
-                        <p class="transportacion">
-                            Más del 70% de los conductores lavan su auto un promedio de 1.3 veces a la semanas. Queda
-                            claro que hay millones de autos que necesitan ser lavados.
-                        </p>
+                <div class="col-xs-6 col-sm-6 col-md-4 mb-50">
+                    <div class="media">
+                        <img class=" mt-10 mr-2" src="images/icons/catalogo-06.png" width="40" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h6 class="mt-0 mont"><strong>SECADO EFICIENTE</strong></h6>
+                            <h6 class="">TURBO VENTILADORES <br> POTENTES DE 5.5KW</h6>
+                        </div>
+                    </div>
+                    <!--wnd media -->
                 </div>
+                <!--end col -->
 
-                <div class="col-xs-12 col-md-3 services-padding">
-                    <img src="images/icons/03.png" alt="Liquidez
-                    inmejorable" width="45" class="oculto imagen-servicios">
-                    <h6 class="transporte-service">Liquidez
-                        inmejorable</h5>
-                        <p class="transportacion">Más del 90% de los ingresos son en efectivo, lo que reduce al mínimo
-                            la gestión de cobros.
-                        </p>
+                <div class="col-xs-6 col-sm-6 col-md-4 mb-50">
+                    <div class="media">
+                        <img class=" mt-10 mr-2" src="images/icons/catalogo-03.png" width="40" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h6 class="mt-0 mont"><strong>CERRAMIENTO INCLUIDO</strong></h6>
+                            <h6 class="">LA SERIE MATIK´S INCLUYE <br> EL CERRAMIENTO DEL TÚNEL</h6>
+                        </div>
+                    </div>
+                    <!--wnd media -->
                 </div>
-
-                <div class="col-xs-12 col-md-3 services-padding" data-aos="fade-up" data-aos-duration="1300">
-                    <img src="images/icons/04.png" alt=" Responsabilidad social 
-                    y ecologica" width="45" class="oculto imagen-servicios">
-                    <h6 class="transporte-service">
-                        Responsabilidad social
-                        y ecologica
-                        </h5>
-                        <p class="transportacion">Contribuyes a crear empleos formales y cuidado del medio ambiente
-                            evitando verter aguas residuales en el subsuelo y drenajes públicos
-                        </p>
+                <!--end col -->
+                <div class="col-xs-6 col-sm-6 col-md-4 mb-50">
+                    <div class="media">
+                        <img class=" mt-10 mr-2" src="images/icons/catalogo-05.png" width="40" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h6 class="mt-0 mont"><strong>AHORRO DE AGUA </strong></h6>
+                            <h6 class="">PUEDES RECICLAR HASTA <br> 95% DEL AGUA UTILIZADA</h6>
+                        </div>
+                    </div>
+                    <!--wnd media -->
                 </div>
-
-
-
+                <!--end col -->
+                
             </div>
+            <!--end row -->
         </div>
     </section>
 
@@ -218,7 +236,7 @@
                 <div class="col-xs-12 col-sm-4 col-md-4">
                     <a href="#">
                         <button class="btn-1" data-aos="fade-left" data-aos-duration="1800">
-                        <i class="fas fa-file-download"></i> 
+                            <i class="fas fa-file-download"></i>
                             Descargar Catálogo
                         </button>
                     </a>
@@ -257,20 +275,23 @@
                                 elseif ($error == "estado") :
                                     echo "<h5>Porfavor, Introduce un estado válido</h5>";
 
-                                elseif ($error == "calle") :
-                                    echo "<h5>Porfavor, Introduce una calle válido</h5>";
+                                elseif ($error == "ciudad") :
+                                    echo "<h5>Porfavor, Introduce una ciudad válida</h5>";
 
-                                elseif ($error == "presupuesto") :
-                                    echo "<h5>Porfavor, Introduce un presupuesto válido</h5>";
-
-                                elseif ($error == "RadioValue1") :
+                                elseif ($error == "Tipo de Equipo") :
                                     echo "<h5>Porfavor, selecciona una opción</h5>";
 
-                                elseif ($error == "RadioValue2") :
-                                    echo "<h5>Porfavor, selecciiona una opción</h5>";
+                                elseif ($error == "¿Para qué necesitas el equipo?") :
+                                    echo "<h5>Porfavor, selecciona una opción</h5>";
+
+                                elseif ($error == "¿Estas interesado en un proyecto Llave en mano?") :
+                                    echo "<h5>Porfavor, selecciona una opción</h5>";
 
                                 elseif ($error == "mensaje") :
                                     echo "<h5>Porfavor, Introduce un mensaje válido</h5>";
+
+                                elseif ($error == "terminos y condiciones") :
+                                    echo "<h5>Debes aceptar los términos y condiciones</h5>";
 
                                 endif;
                             endif;
@@ -280,33 +301,27 @@
                                 <div class="form-group">
                                     <label class="sr-only" for="c_name">Nombre</label>
                                     <input type="text" pattern="[A-Za-z-áéíóú\s]+" onkeyup="this.className = 'campo';" id="c_name" class="form-control" name="c_name" placeholder="Nombre" required>
-                                   
+
                                 </div>
                                 <p class="black">E-mail</p>
                                 <div class="form-group">
                                     <label class="sr-only" for="c_email">ejemplo@mail.com </label>
                                     <input type="email" id="c_email" pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" onkeyup="this.className = 'campo';" class="form-control" name="c_email" placeholder="ejemplo@mail.com " required>
-                               
+
                                 </div>
                                 <p class="black">Teléfono</p>
                                 <div class="form-group">
                                     <label class="sr-only" for="c_phone">1234567891 </label>
                                     <input type="tel" id="c_phone" pattern="^[0-9]+" maxlength="15" minlength="8" onkeyup="this.className = 'campo';" class="form-control" name="c_phone" placeholder="812-4567-891" required>
-                                  
+
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12 col-md-6">
-                                        <p class="black">País</p>
+                                        <p class="black">Estado</p>
                                         <div class="form-group">
 
-                                            <select name="pais" id="pais" class="form-control">
-                                                <option value="" selected>Selecciona una opción</option>
-                                                <option value=""></option>
-                                                <option value=""></option>
-                                                <option value=""></option>
-                                                <option value=""></option>
-                                            </select>
-                                          
+                                            <input type="text" pattern="[A-Za-z-áéíóú\s]+" onkeyup="this.className = 'campo';" id="c_state" class="form-control" name="c_state" placeholder="Estado" required>
+
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-md-6">
@@ -314,22 +329,21 @@
                                         <div class="form-group">
 
                                             <input type="text" pattern="[A-Za-z-áéíóú\s]+" onkeyup="this.className = 'campo';" id="c_city" class="form-control" name="c_city" placeholder="Ciudad" required>
-                                           
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <p class="black">Tipo de equipo</p>
+                            <p class="black">Selecciona el equipo de interés</p>
                             <div class="form-group">
 
-                                <select name="equipo" id="equipo" class="form-control">
+                                <select name="c_team" id="c_team" class="form-control" required>
                                     <option value="" selected>Selecciona una opción</option>
-                                    <option value=""></option>
-                                    <option value=""></option>
-                                    <option value=""></option>
-                                    <option value=""></option>
+                                    <option value="Túneles de Lavado">Túneles de Lavado</option>
+                                    <option value="Puentes de Lavado">Puentes de Lavado</option>
+                                    <option value="Puentes de Lavado Tsunami 360">Puentes de Lavado Tsunami 360</option>
                                 </select>
-                                
+
                             </div>
 
                             <p class="black">¿Para qué necesitas el equipo?</p>

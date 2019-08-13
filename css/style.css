@@ -20,6 +20,42 @@ h1 {
     font-size: 36px;
     font-family: 'Roboto', sans-serif;
 }
+.mt-70 {
+    margin-top: 70px;
+}
+.mt-50{
+    margin-top:50px;
+}
+.mt-40{
+    margin-top:40px;
+}
+.mt-30{
+    margin-top:30px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mb-70 {
+    margin-bottom: 70px;
+}
+.mb-50{
+    margin-bottom:50px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.ml-10{
+    margin-left: 10px;
+}
+.ml-20{
+    margin-left: 20px;
+}
 
 a:hover {
    text-decoration: none;
@@ -188,7 +224,7 @@ a.color {
 .envios .btn-1 {
     font-weight: 600;
     margin: 70px 0 0 16px;
-    padding: 0 50px;
+    padding: 10px 10px 10px 10px;
     height: 52px;
     background: white;
     color: #001F38;
@@ -199,6 +235,7 @@ a.color {
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 3px;
+    width: 200px;
 }
 .ventajas .btn-download{
     display: block;
@@ -809,6 +846,14 @@ h3.footer {
         margin-bottom: 10px;
         height: auto;
         width: 80px;
+    }
+}
+
+@media screen and (max-width:480px){
+    ul.images-acomodo li img{
+        width: 70%;
+        display: block;
+        margin: auto;
     }
 }
 
