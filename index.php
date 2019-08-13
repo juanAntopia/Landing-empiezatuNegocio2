@@ -38,7 +38,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 padding-columna-header">
                         <h5 class="header-subtitulo">
-                            Cobertura a toda la República Mexicana
+                            Atendemos en todo México y Latinoamérica
                         </h5>
                         <img src="images/icons/Logo.png" alt="Logo" class="imagen-logo">
                     </div>
@@ -89,16 +89,21 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-8 ">
-                    
-                    <h1 class="">¿Buscas un negocio rentable y con alta liquidez? </h1>
 
-                    <h2 class="white">Un autolavado te ofrece esa posibilidad.</h2>
-                    <p class="white"> Ponemos a tu disposición un plan de negocio con grandes rendimientos y retornos de
-                        inversión reales en poco tiempo.
-                        <br>
-                        Todos los dueños de autos requieren lavarlos.</p> <br>
+                    <h1 class="">¿Buscas empezar o renovar tu autolavado? </h1>
 
-                    <h2 class="white">¡Recupera tu inversión a partir de 18 meses!</h2>
+                    <h2 class="white">Nosotros te ofrecemos nuestro equipo.</h2>
+                    <p class="white"> GreenMatik es la primer empresa mexicana que diseña y ofrece a sus
+                        clientes los mejores equipos de autolavado para México y Latinoamérica
+                    </p>
+
+                    <p class="white">
+                        En sinergia con el fabricante más innovador de Asia ofrecemos las tecnologías
+                        más innovadoras en túneles y puentes de lavado, confiables y funcionales.
+                    </p>
+
+
+                    <h2 class="white">¡La mejor relación calidad-precio del mercado!</h2>
 
                 </div>
             </div>
@@ -122,7 +127,7 @@
 
 
     <section id="servicios" class="titulo-servicios container" data-aos="fade-up">
-        <h2 class="text-center">¿POR QUÉ UN AUTOLAVADO CON EQUIPO GREENMATIK ES UN GRAN NEGOCIO?</h2>
+        <h2 class="text-center">¿QUÉ VENTAJAS TE OFRECE UN EQUIPO DE AUTOLAVADO GREENMATIK?</h2>
         <!--<hr style="border: 2px solid #001F38; width:20%; margin-bottom: 0px">-->
 
         <div class="row">
@@ -197,196 +202,186 @@
     <section class="envios">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-10 envios-section">
-                    <h2 class="envios2-title">¡Emprende un negocio rentable hoy mismo!</h2>
+                <div class="col-xs-12 col-sm-8 col-md-8 envios-section">
+                    <h2 class="envios2-title">¡Conoce nuestro catálogo de productos!</h2>
 
-                    <p>Te acompañaremos en todo el proceso para que tu negocio sea toda una realidad. <br> Nuestros
-                        asesores profesionales te brindarán la mejor atención para aclarar todas tus dudas o
-                        inquietudes.</p>
+                    <p>
+                        Ofrecemos equipos robustos de alto rendimiento y unos costes de mantenimiento
+                        realmente bajos
+                    </p>
+
+                    <p>
+                        Nuestros asesores profesionales te brindarán la mejor atención para aclarar todas tus dudas
+                        o inquietudes.
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <a href="#">
+                        <button class="btn-1" data-aos="fade-left" data-aos-duration="1800">
+                        <i class="fas fa-file-download"></i> 
+                            Descargar Catálogo
+                        </button>
+                    </a>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <section class="text-center" id="Contacto" style="background: #fafafa">
+    <section class="" id="Contacto" style="background: #fafafa">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-6 col-lg-6">
                     <div class="titulo-servicios container">
-                        <h3 class="contacto-subt">¿TE INTERESA ARMAR UN PROYECTO?<br>
-                            CUÉNTANOS MÁS</h2>
+                        <h3 class="contacto-subt">
+                            ¿Qué tipo de equipo te interesa?
+                        </h3>
+                        <form action="mail/formulario-contacto.php" style="padding: 30px 30px; background:white; margin:50px 0;" id="contact-form" method="post" role="form">
 
-                            <form action="mail/formulario-contacto.php" style="padding: 30px 30px; background:white; margin:50px 0;" id="contact-form" method="post" role="form">
+                            <?php
+                            if (isset($_GET['error'])) :
+                                $error = $_GET['error'];
 
-                                <?php
-                                    if(isset($_GET['error'])):
-                                        $error = $_GET['error'];
+                                if ($error == "faltan_valores") :
+                                    echo "<h5>Porfavor, Introduce bien los datos</h5>";
 
-                                        if($error == "faltan_valores"):
-                                            echo "<h5>Porfavor, Introduce bien los datos</h5>";  
+                                elseif ($error == "nombre") :
+                                    echo "<h5>Porfavor, Introduce un nombre válido</h5>";
 
-                                        elseif($error == "nombre"):
-                                            echo "<h5>Porfavor, Introduce un nombre válido</h5>";
+                                elseif ($error == "email") :
+                                    echo "<h5>Porfavor, Introduce un email válido</h5>";
 
-                                        elseif($error == "email"):
-                                            echo "<h5>Porfavor, Introduce un email válido</h5>";    
+                                elseif ($error == "telefono") :
+                                    echo "<h5>Porfavor, Introduce un teléfono válido</h5>";
 
-                                        elseif($error == "telefono"):
-                                            echo "<h5>Porfavor, Introduce un teléfono válido</h5>"; 
-                                        
-                                        elseif($error == "estado"):
-                                            echo "<h5>Porfavor, Introduce un estado válido</h5>";
-                                        
-                                        elseif($error == "calle"):
-                                            echo "<h5>Porfavor, Introduce una calle válido</h5>";
-                                        
-                                        elseif($error == "presupuesto"):
-                                           echo "<h5>Porfavor, Introduce un presupuesto válido</h5>";
+                                elseif ($error == "estado") :
+                                    echo "<h5>Porfavor, Introduce un estado válido</h5>";
 
-                                        elseif($error == "RadioValue1"):
-                                            echo "<h5>Porfavor, selecciona una opción</h5>";
+                                elseif ($error == "calle") :
+                                    echo "<h5>Porfavor, Introduce una calle válido</h5>";
 
-                                        elseif($error == "RadioValue2"):
-                                            echo "<h5>Porfavor, selecciiona una opción</h5>";
-                                        
-                                        elseif($error == "mensaje"):
-                                            echo "<h5>Porfavor, Introduce un mensaje válido</h5>";
+                                elseif ($error == "presupuesto") :
+                                    echo "<h5>Porfavor, Introduce un presupuesto válido</h5>";
 
-                                        endif;
-                                    endif;
-                                ?>
-                                <div class="ajax-hidden">
-                                    <p class="black">Nombre</p>
-                                    <div class="form-group">
-                                        <label class="sr-only" for="c_name">Nombre</label>
-                                        <input type="text" pattern="[A-Za-z-áéíóú\s]+" onkeyup="this.className = 'campo';" id="c_name" class="form-control" name="c_name" placeholder="Nombre" required>
-                                        <div id="nombre-status" class="status-fields"></div>
-                                    </div>
-                                    <p class="black">E-mail</p>
-                                    <div class="form-group">
-                                        <label class="sr-only" for="c_email">ejemplo@mail.com </label>
-                                        <input type="email" id="c_email" pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" onkeyup="this.className = 'campo';" class="form-control" name="c_email" placeholder="ejemplo@mail.com " required>
-                                        <div id="email-status" class="status-fields"></div>
-                                    </div>
-                                    <p class="black">Teléfono</p>
-                                    <div class="form-group">
-                                        <label class="sr-only" for="c_phone">1234567891 </label>
-                                        <input type="tel" id="c_phone" pattern="^[0-9]+" maxlength="15" minlength="8" onkeyup="this.className = 'campo';" class="form-control" name="c_phone" placeholder="812-4567-891" required>
-                                        <div id="telefono-status" class="status-fields"></div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12 col-md-6">
-                                            <p class="black">Estado</p>
-                                            <div class="form-group">
+                                elseif ($error == "RadioValue1") :
+                                    echo "<h5>Porfavor, selecciona una opción</h5>";
 
-                                                <input type="text" pattern="[A-Za-z-áéíóú\s]+" onkeyup="this.className = 'campo';" id="c_state" class="form-control" name="c_state" placeholder="Estado" required>
-                                                <div id="estado-status" class="status-fields"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-md-6">
-                                            <p class="black">Ciudad</p>
-                                            <div class="form-group">
+                                elseif ($error == "RadioValue2") :
+                                    echo "<h5>Porfavor, selecciiona una opción</h5>";
 
-                                                <input type="text" pattern="[A-Za-z-áéíóú\s]+" onkeyup="this.className = 'campo';" id="c_city" class="form-control" name="c_city" placeholder="Ciudad" required>
-                                                <div id="ciudad-status" class="status-fields"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="black">Presupuesto aproximado</p>
+                                elseif ($error == "mensaje") :
+                                    echo "<h5>Porfavor, Introduce un mensaje válido</h5>";
+
+                                endif;
+                            endif;
+                            ?>
+                            <div class="ajax-hidden">
+                                <p class="black">Nombre</p>
                                 <div class="form-group">
-
-                                    <input type="text" pattern="^[0-9]+" onkeyup="this.className = 'campo';" id="c_budget" class="form-control" name="c_budget" placeholder="$1,000,00" required>
-                                    <div id="presupuesto-status" class="status-fields"></div>
+                                    <label class="sr-only" for="c_name">Nombre</label>
+                                    <input type="text" pattern="[A-Za-z-áéíóú\s]+" onkeyup="this.className = 'campo';" id="c_name" class="form-control" name="c_name" placeholder="Nombre" required>
+                                   
                                 </div>
-
-                                <p class="black">¿Cuentas con terreno?</p>
-                                <div class="text-left">
-                                    <div class="form-check form-check-inline ">
-                                        <input class="form-check-input" type="radio" name="radioValue" id="inlineRadio1" value="si" required>
-                                        <label class="form-check-label" for="inlineRadio">Si</label>
-
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="radioValue" id="inlineRadio2" value="no" required>
-                                        <label class="form-check-label" for="inlineRadio">No</label>
-                                    </div>
-                                </div>
-                                <div id="terreno-status" class="status-fields"></div>
-
-                                <br>
-
-                                <div class="row" id="form-measurements">
-                                    <div class="col-xs-12 col-md-4">
-                                        <p class="black">m2</p>
-                                        <div class="form-group">
-
-                                            <input type="number" id="c_camp1" pattern="^[0-9]+" onkeyup="this.className = 'campo';" class="form-control" name="c_camp1" placeholder=" 50" disabled>
-                                            <div id="camp1-status" class="status-fields"></div>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-md-4">
-                                        <p class="black">Ancho</p>
-                                        <div class="form-group">
-
-                                            <input type="number" id="c_camp2" pattern="^[0-9]+" onkeyup="this.className = 'campo';" class="form-control" name="c_camp2" disabled placeholder="25">
-                                            <div id="camp2-status" class="status-fields"></div>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xs-12 col-md-4">
-                                        <p class="black">Largo</p>
-                                        <div class="form-group">
-
-                                            <input type="number" id="c_camp3" pattern="^[0-9]+" onkeyup="this.className = 'campo';" class="form-control" name="c_camp3" disabled placeholder="25">
-                                            <div id="camp3-status" class="status-fields"></div>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <p class="black">¿Estas interesado en un proyecto Llave en mano?</p>
-                                <div class="text-left">
-                                    <div class="form-check form-check-inline ">
-                                        <input class="form-check-input" type="radio" name="radioValue2" id="inlineRadio1" value="si" required>
-                                        <label class="form-check-label" for="inlineRadio1">Si</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="radioValue2" id="inlineRadio2" value="no" required>
-                                        <label class="form-check-label" for="inlineRadio2">No</label>
-                                    </div>
-                                </div>
-                                <div id="interest-status" class="status-fields"></div>
-
-
-                                <br>
-
+                                <p class="black">E-mail</p>
                                 <div class="form-group">
-                                    <textarea class="form-control" onkeyup="this.className = 'campo';" id="c_message" name="c_message" rows="7" placeholder="Mensaje" required></textarea>
-                                    <div id="mensaje-status" class="status-fields"></div>
+                                    <label class="sr-only" for="c_email">ejemplo@mail.com </label>
+                                    <input type="email" id="c_email" pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" onkeyup="this.className = 'campo';" class="form-control" name="c_email" placeholder="ejemplo@mail.com " required>
+                               
+                                </div>
+                                <p class="black">Teléfono</p>
+                                <div class="form-group">
+                                    <label class="sr-only" for="c_phone">1234567891 </label>
+                                    <input type="tel" id="c_phone" pattern="^[0-9]+" maxlength="15" minlength="8" onkeyup="this.className = 'campo';" class="form-control" name="c_phone" placeholder="812-4567-891" required>
+                                  
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6">
+                                        <p class="black">País</p>
+                                        <div class="form-group">
+
+                                            <select name="pais" id="pais" class="form-control">
+                                                <option value="" selected>Selecciona una opción</option>
+                                                <option value=""></option>
+                                                <option value=""></option>
+                                                <option value=""></option>
+                                                <option value=""></option>
+                                            </select>
+                                          
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <p class="black">Ciudad</p>
+                                        <div class="form-group">
+
+                                            <input type="text" pattern="[A-Za-z-áéíóú\s]+" onkeyup="this.className = 'campo';" id="c_city" class="form-control" name="c_city" placeholder="Ciudad" required>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="black">Tipo de equipo</p>
+                            <div class="form-group">
+
+                                <select name="equipo" id="equipo" class="form-control">
+                                    <option value="" selected>Selecciona una opción</option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                                
+                            </div>
+
+                            <p class="black">¿Para qué necesitas el equipo?</p>
+                            <div class="text-left">
+                                <div class="form-check form-check-inline ">
+                                    <input class="form-check-input" type="radio" name="radioValue" id="inlineRadio1" value="si" required>
+                                    <label class="form-check-label" for="inlineRadio">Empezar nuevo negocio</label>
 
                                 </div>
-                                <div class="form-group form-check text-left">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" name="c_terms" required>
-                                    <label class="form-check-label" for="exampleCheck1">
-                                        Acepto los términos y
-                                        condiciones de la<br>
-                                        <a href="privacidad.html">
-                                            Política de
-                                            Privacidad
-                                        </a>
-                                    </label>
-                                    <div id="terms-status" class="status-fields"></div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="radioValue" id="inlineRadio2" value="no" required>
+                                    <label class="form-check-label" for="inlineRadio">Renovar equipo actual</label>
                                 </div>
+                            </div>
 
-                                <button type="submit" class="btn-enviar" id="btn-ajax">
-                                    Enviar
-                                </button>
+                            <br>
 
-                            </form>
+                            <p class="black">¿Estas interesado en un proyecto Llave en mano?</p>
+                            <div class="text-left">
+                                <div class="form-check form-check-inline ">
+                                    <input class="form-check-input" type="radio" name="radioValue2" id="inlineRadio1" value="si" required>
+                                    <label class="form-check-label" for="inlineRadio1">Si</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="radioValue2" id="inlineRadio2" value="no" required>
+                                    <label class="form-check-label" for="inlineRadio2">No</label>
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="form-group">
+                                <textarea class="form-control" onkeyup="this.className = 'campo';" id="c_message" name="c_message" rows="7" placeholder="Mensaje" required></textarea>
+
+                            </div>
+                            <div class="form-group form-check text-left">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" name="c_terms" required>
+                                <label class="form-check-label" for="exampleCheck1">
+                                    Acepto los términos y
+                                    condiciones de la<br>
+                                    <a href="privacidad.html">
+                                        Política de
+                                        Privacidad
+                                    </a>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn-enviar" id="btn-ajax">
+                                Enviar
+                            </button>
+
+                        </form>
                     </div>
                 </div>
 

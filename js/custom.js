@@ -37,6 +37,13 @@ $(function(){
 
 $(document).ready(function(){
 
+	$.getJSON('http://api.wipmania.com/jsonp?callback=?', function (data) {        
+
+	var country = data.address.country;
+	console.log('País de usuario: ' + country);    
+
+	});
+
 	var radioButton1 = document.getElementById('inlineRadio1');
 	var radioButton2 = document.getElementById('inlineRadio2');
 	var input1 = document.getElementById('c_camp1');
